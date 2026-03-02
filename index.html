@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>ShaniMart Premium</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- LOGIN -->
+<div id="loginPage" class="login">
+  <h1>🛍 ShaniMart</h1>
+  <input type="text" id="username" placeholder="Enter Username">
+  <button onclick="login()">Enter Store</button>
+</div>
+
+<!-- MAIN APP -->
+<div id="app" class="hidden">
+
+<header>
+  <h2>ShaniMart</h2>
+  <input type="text" placeholder="Search products..." oninput="searchProducts(this.value)">
+  <div>
+    <button onclick="openCart()">🛒 <span id="cartCount">0</span></button>
+    <button onclick="logout()">Logout</button>
+  </div>
+</header>
+
+<div class="products" id="productList"></div>
+
+<!-- CART -->
+<div id="cartSidebar" class="cart hidden">
+  <h3>Your Cart</h3>
+  <div id="cartItems"></div>
+  <h4>Total: ₹ <span id="totalPrice">0</span></h4>
+  <button class="checkout" onclick="checkout()">Checkout</button>
+  <button onclick="closeCart()">Close</button>
+</div>
+
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
