@@ -1,0 +1,46 @@
+body { font-family: Arial; margin:0; background:#f1f3f6; }
+
+header {
+  background:#2874f0;
+  color:white;
+  padding:15px;
+  display:flex;
+  justify-content:space-between;
+}
+
+.auth-box, .add-product {
+  background:white;
+  padding:20px;
+  margin:20px;
+}
+
+input {
+  padding:8px;
+  margin:5px;
+}
+
+button {
+  padding:8px 12px;
+  background:#2874f0;
+  color:white;
+  border:none;
+  cursor:pointer;
+}
+
+.products {
+  display:flex;
+  flex-wrap:wrap;
+  gap:20px;
+  padding:20px;
+}
+
+.card {
+  background:white;
+  padding:15px;
+  width:200px;
+  border-radius:5px;
+}
+
+.card img {
+  width:100%;
+}
