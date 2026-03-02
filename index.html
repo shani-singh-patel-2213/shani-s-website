@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>ShaniMart</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="https://www.gstatic.com/firebasejs/10.7.1/firebase-app.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/10.7.1/firebase-auth.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/10.7.1/firebase-firestore.js"></script>
+</head>
+<body>
+
+<header>
+  <h2>ShaniMart 🛒</h2>
+  <button onclick="logout()">Logout</button>
+</header>
+
+<div class="auth-box">
+  <h3>Login / Register</h3>
+  <input type="email" id="email" placeholder="Email">
+  <input type="password" id="password" placeholder="Password">
+  <button onclick="register()">Register</button>
+  <button onclick="login()">Login</button>
+</div>
+
+<section class="add-product">
+  <h3>Add Product (Admin)</h3>
+  <input type="text" id="pname" placeholder="Product Name">
+  <input type="number" id="price" placeholder="Price">
+  <input type="text" id="image" placeholder="Image URL">
+  <button onclick="addProduct()">Add Product</button>
+</section>
+
+<section class="products" id="products"></section>
+
+<script src="script.js"></script>
+</body>
+</html>
